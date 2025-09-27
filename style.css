@@ -68,9 +68,9 @@ body {
 }
 
 .subtitle {
-    font-size: 2px;/* 1.2em; */
+    font-size: 1.2em;
     margin-bottom: 30px;
-    color: red;/* #a0647a; */
+    color: #a0647a;
     font-style: italic;
 }
 
