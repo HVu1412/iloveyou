@@ -86,8 +86,6 @@ body {
     background: linear-gradient(135deg, #fff5f8 0%, #f8f0ff 100%);
     border-radius: 20px;
     border: 1px solid rgba(212, 165, 184, 0.3);
-    transform: scale(1.2);  /* 1.2 = to hơn 20%, có thể chỉnh 1.5, 2.0 */
-    transform-origin: center;
 }
 
 .timer-grid {
