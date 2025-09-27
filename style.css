@@ -4,7 +4,12 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow: hidden;
+}
+
 body {
+    overflow: hidden;
     font-family: 'Georgia', serif;
     background: linear-gradient(135deg, #ffeef8 0%, #ffe8f0 50%, #f0e6ff 100%);
     min-height: 100vh;
