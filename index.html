@@ -4,55 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thời Gian Yêu Nhau</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <div class="hearts"></div>
     
-    <div class="container">
-        <h1 class="title">💕 Times love 💕</h1>
-        <p class="subtitle">Mỗi giây trôi qua là một kỷ niệm đẹp nhất^^</p>
-        
-        <div class="love-quote">
-            "Tình yêu không được đo bằng thời gian bên nhau, mà bằng những khoảnh khắc khiến thời gian dường như ngừng lại"
+    <div class="wrapper">
+        <!-- Phần trên cố định -->
+        <div class="container">
+            <h1 class="title">💕 Time love 💕</h1>
+            <p class="subtitle">
+              "Thời gian chính là bằng chứng tình yêu của chúng ta."
+            </p>
         </div>
-        
-        <div class="timer-container">
-            <div class="timer-grid">
-                <div class="time-unit">
-                    <span class="time-number" id="years">0</span>
-                    <div class="time-label">Năm</div>
-                </div>
-                <div class="time-unit">
-                    <span class="time-number" id="months">0</span>
-                    <div class="time-label">Tháng</div>
-                </div>
-                <div class="time-unit">
-                    <span class="time-number" id="days">0</span>
-                    <div class="time-label">Ngày</div>
-                </div>
-                <div class="time-unit">
-                    <span class="time-number" id="hours">0</span>
-                    <div class="time-label">Giờ</div>
-                </div>
-                <div class="time-unit">
-                    <span class="time-number" id="minutes">0</span>
-                    <div class="time-label">Phút</div>
-                </div>
-                <div class="time-unit">
-                    <span class="time-number" id="seconds">0</span>
-                    <div class="time-label">Giây</div>
+
+        <!-- Phần dưới co giãn -->
+        <div class="content">
+            <div class="love-quote">
+                "Ngày tháng bên nhau chính là minh chứng đẹp nhất cho tình yêu của chúng ta."
+            </div>
+            
+            <div class="timer-container">
+                <div class="timer-grid">
+                    <div class="time-unit">
+                        <span class="time-number" id="years">0</span>
+                        <div class="time-label">Năm</div>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="months">0</span>
+                        <div class="time-label">Tháng</div>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="days">0</span>
+                        <div class="time-label">Ngày</div>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="hours">0</span>
+                        <div class="time-label">Giờ</div>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="minutes">0</span>
+                        <div class="time-label">Phút</div>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="seconds">0</span>
+                        <div class="time-label">Giây</div>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="start-date">
-            💖 Bắt đầu từ: 20:00:00 ngày 30/07/2025 💖
+            
+            <div class="start-date">
+                💖 Bắt đầu từ: 20:00:00 ngày 30/07/2025 💖
+            </div>
         </div>
     </div>
 
     <div class="celebration" id="celebration">🎉💕🎊</div>
 
-    <script src="script.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
