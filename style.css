@@ -4,21 +4,15 @@
     box-sizing: border-box;
 }
 
-html {
-    overflow: hidden;
-}
-
 body {
-    overflow: hidden;
     font-family: 'Georgia', serif;
     background: linear-gradient(135deg, #ffeef8 0%, #ffe8f0 50%, #f0e6ff 100%);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     color: #6b4c57;
-    overflow: hidden;
     position: relative;
 }
 
@@ -46,9 +40,18 @@ body {
     100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;       /* chiếm toàn màn hình */
+    width: 100%;
+    align-items: center; /* căn giữa ngang */
+}
+
+/* phần trên */
 .container {
     background: rgba(255, 255, 255, 0.9);
-    padding: 40px;
+    padding: 30px;
     border-radius: 25px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -58,17 +61,30 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.3);
     z-index: 2;
     position: relative;
+
+    flex: 0 0 auto;   /* giữ nguyên, không bị kéo */
+}
+
+/* phần dưới */
+.content {
+    flex: 1;              /* chiếm hết phần còn lại */
+    min-height: 0;        /* quan trọng để overflow hoạt động */
+    overflow-y: auto;     /* cuộn dọc khi nhiều */
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
 }
 
 .title {
     font-size: 2.5em;
-    margin-bottom: 10px;
+    margin: 0px;
+    margin-bottom: 30px;
     color: #8b4367;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .subtitle {
-    font-size: 1.2em;
+    font-size: 1.0em;
     margin-bottom: 30px;
     color: #a0647a;
     font-style: italic;
@@ -76,7 +92,8 @@ body {
 
 .love-quote {
     font-size: 1em;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
+    margin-top: -5px;
     color: #8b4367;
     font-style: italic;
     padding: 15px;
@@ -86,10 +103,10 @@ body {
 }
 
 .timer-container {
-    margin: 30px 0;
+    margin: 10px 0;
     padding: 25px;
-    background: linear-gradient(135deg, #fff5f8 0%, #f8f0ff 100%);
-    border-radius: 20px;
+    background: linear-gradient(135deg, #fff5f8 0%,  #f8f0ff  100%); 
+    border-radius: 25px;
     border: 1px solid rgba(212, 165, 184, 0.3);
 }
 
@@ -131,7 +148,7 @@ body {
 .start-date {
     font-size: 1.1em;
     color: #8b4367;
-    margin-top: 20px;
+  /*  margin-top: 13px; */
     padding: 15px;
     background: rgba(255, 240, 245, 0.5);
     border-radius: 12px;
