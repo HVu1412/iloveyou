@@ -143,9 +143,9 @@ body {
 .start-date {
     font-size: 1.1em;
     color: #8b4367;
-    padding: 200px;
+   /* padding: 200px; */
     background: rgba(255, 240, 245, 0.5);
-    border-radius: 12px;
+  /*  border-radius: 12px;   */
 }
 
 .celebration {
