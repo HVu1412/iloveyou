@@ -58,7 +58,6 @@ function updateTimer() {
     document.getElementById('seconds').textContent = seconds;
 
     if (totalDays > lastDayCount) {
-        showCelebration();
         lastDayCount = totalDays;
     }
 }
@@ -74,6 +73,6 @@ createHearts();
 updateTimer();
 setInterval(updateTimer, 1000);
 
-window.addEventListener('load', () => {
-    setTimeout(showCelebration, 1000);
-});
+// window.addEventListener('load', () => {
+//    setTimeout(showCelebration, 1000);
+// });
