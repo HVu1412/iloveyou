@@ -14,7 +14,7 @@ body {
     background: linear-gradient(135deg, #ffeef8 0%, #ffe8f0 50%, #f0e6ff 100%);
     min-height: 100vh;
     display: flex;
-    align-items: flex-start;   /* căn giữa dọc */
+    align-items: center;   /* căn giữa dọc */
     justify-content: center; /* căn giữa ngang */
     color: #6b4c57;
     position: relative;
