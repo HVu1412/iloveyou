@@ -63,7 +63,7 @@ function updateTimer() {
     }
 }
 
-function showCelebration() {
+// function showCelebration() {
     const celebration = document.getElementById('celebration');
     celebration.classList.add('show');
     setTimeout(() => celebration.classList.remove('show'), 3000);
