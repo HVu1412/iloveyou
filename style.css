@@ -59,7 +59,7 @@ body {
     z-index: 2;
     position: relative;
     overflow: hidden;
-    margin-top: -150px;
+    margin-top: 0;
 }
 
 /* Nội dung bên trong container */
