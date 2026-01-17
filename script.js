@@ -1,5 +1,6 @@
 // Ngày bắt đầu yêu nhau: 30/07/2025 20:00:00 (giờ VN)
-const startDate = new Date('2025-07-30T20:00:00+07:00');
+const startDate = new //Date('2025-07-30T20:00:00+07:00');
+Date('2026-01-17T16:00:00+07:00');
 let lastDayCount = 0;
 
 function createHearts() {
